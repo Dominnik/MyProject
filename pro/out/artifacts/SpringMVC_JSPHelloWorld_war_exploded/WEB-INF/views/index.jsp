@@ -1,6 +1,7 @@
-<!-- обратите внимание на spring тэги -->
+
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 
 <!--//////////////////////////////////////////////////////////////////////////-->
 
@@ -8,19 +9,14 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Дратути</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/style1.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/screen.css"/>
+  <title>taskTracker</title>
 
 
 </head>
 
 <body>
-
-<div id="wrapper">
-  <div id="container" class="container">
-  </div>
-</div>
-
-
 
 
 
@@ -61,34 +57,39 @@
     }
 </script>
 
-<body>
+
 
 <input type="text" id="text-to-find" placeholder="Поиск...">
 <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
-<br/><i>Введите слово или фразу для поиска.</i>
 <hr/>
 
-<table border='2' cellpadding='20'>
-    <tr><th>Товар</th><th>Вес</th><th>Стоимость</th></tr>
-    <tr><td>Монитор 19 дюймов</td><td>1 кг</td><td>1900 руб.</td></tr>
-    <tr><td>монитор 18 дюймов</td><td>2 кг</td><td>1800 руб.</td></tr>
-    <tr><td>Монитор 20 дюймов</td><td>2 кг</td><td>1900 руб.</td></tr>
+<table border='2' cellpadding='20' bgcolor="aqua">
+    <tr><th>Категории</th></tr>
+    <tr><td>категория1</td></tr>
+    <tr><td>категория2</td></tr>
+    <tr><td>категория3</td></tr>
+    <tr><td>категория4</td></tr>
+    <tr><td>категория5</td></tr>
 </table>
+</body>
 
+<body>
 
+<div class="span-6" id="contentwrap">
     <div class="span-3">
         <div class="sidebar">
 
             <ul>
 
-            <li><h2>Спонсоры</h2>
+            <li><h2>Категории</h2>
                 <ul>
                     <li><h3>Внимание!</br>Проект ищет спонсоров!</h3></li>
                 </ul></li>
 
-            </ul>>
+            </ul>
+        </div></div>
 
-</body>
+
 
 
 <spring:form method="post"  modelAttribute="userJSP" action="check-user">
@@ -101,4 +102,7 @@
 
 </body>
 
+
+
 </html>
+

@@ -1,0 +1,22 @@
+
+body, span, h2, ul, li, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+
+.container {width:950px;margin:0 auto;}
+
+/* .showgrid {background:url(src/grid.png);} */
+.column, div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6 {float:left;margin-right:10px;}
+.last, div.last {margin-right:0;}
+
+.span-1 {width:150px;}
+.span-2 {width:270px;}
+.span-3 {width:310px;}
+.span-4 {width:510px;}
+.span-5 {width:630px;}
+.span-6, div.span-6 {width:950px;margin:0;}
+
+
+
+
+
